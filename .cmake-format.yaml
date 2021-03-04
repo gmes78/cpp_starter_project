@@ -1,19 +1,11 @@
-additional_commands:
-  foo:
-    flags:
-    - BAR
-    - BAZ
-    kwargs:
-      DEPENDS: '*'
-      HEADERS: '*'
-      SOURCES: '*'
-bullet_char: '*'
-dangle_parens: false
-enum_char: .
+output_encoding: utf-8
 line_ending: unix
-line_width: 120
-max_pargs_hwrap: 3
-separate_ctrl_name_with_space: false
-separate_fn_name_with_space: false
-tab_size: 2
 
+tab_size: 2
+use_tabchars: false
+line_width: 120
+
+dangle_parens: true
+max_pargs_hwrap: 3
+
+command_case: lower

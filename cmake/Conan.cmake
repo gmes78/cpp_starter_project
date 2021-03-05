@@ -11,13 +11,15 @@ macro(run_conan)
     NAME
     conan-center
     URL
-    https://api.bintray.com/conan/conan/conan-center)
+    https://api.bintray.com/conan/conan/conan-center
+  )
 
   conan_add_remote(
     NAME
     bincrafters
     URL
-    https://api.bintray.com/conan/bincrafters/public-conan)
+    https://api.bintray.com/conan/bincrafters/public-conan
+  )
 
   conan_cmake_run(
     REQUIRES
@@ -28,11 +30,12 @@ macro(run_conan)
     spdlog/1.5.0
     OPTIONS
     ${CONAN_EXTRA_OPTIONS}
-    ENV 
+    ENV
     "CC=${CMAKE_C_COMPILER}"
     "CXX=${CMAKE_CXX_COMPILER}"
     BASIC_SETUP
     CMAKE_TARGETS # individual targets to link to
     BUILD
-    missing)
+    missing
+  )
 endmacro()

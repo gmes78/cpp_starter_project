@@ -58,7 +58,8 @@ if(ENABLE_PCH)
     <vector>
     <string>
     <map>
-    <utility>)
+    <utility>
+  )
 endif()
 
 # Set up some extra Conan dependencies based on our needs before loading Conan

@@ -6,5 +6,6 @@ target_link_libraries(
   helloQt
   project_warnings
   project_options
-  Qt5::Widgets)
+  Qt5::Widgets
+)
 target_compile_features(helloQt PUBLIC cxx_nullptr cxx_lambdas)
